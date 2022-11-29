@@ -10,6 +10,7 @@ import { UsPublicDataViewComponent } from './us-public-data-view/us-public-data-
 import { NavbarComponent } from './navbar/navbar.component';
 import { PublicApiViewComponent } from './public-api-view/public-api-view.component';
 import { UserinfoComponent } from './userinfo/userinfo.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 const myRoute:Routes =[
   {
@@ -27,6 +28,10 @@ const myRoute:Routes =[
   {
     path:"userInfo",
     component:UserinfoComponent
+  },
+  {
+    path:"productList",
+    component:ProductListComponent
   }
 ]
 @NgModule({
@@ -36,7 +41,8 @@ const myRoute:Routes =[
     UsPublicDataViewComponent,
     NavbarComponent,
     PublicApiViewComponent,
-    UserinfoComponent
+    UserinfoComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
