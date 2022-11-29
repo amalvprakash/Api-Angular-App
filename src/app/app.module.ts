@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PublicApiViewComponent } from './public-api-view/public-api-view.component';
 import { UserinfoComponent } from './userinfo/userinfo.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { UserDataComponent } from './user-data/user-data.component';
 
 const myRoute:Routes =[
   {
@@ -32,6 +33,10 @@ const myRoute:Routes =[
   {
     path:"productList",
     component:ProductListComponent
+  },
+  {
+    path:"userData",
+    component:UserDataComponent
   }
 ]
 @NgModule({
@@ -42,7 +47,8 @@ const myRoute:Routes =[
     NavbarComponent,
     PublicApiViewComponent,
     UserinfoComponent,
-    ProductListComponent
+    ProductListComponent,
+    UserDataComponent
   ],
   imports: [
     BrowserModule,
