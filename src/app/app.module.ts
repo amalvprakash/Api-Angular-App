@@ -13,6 +13,7 @@ import { UserinfoComponent } from './userinfo/userinfo.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { UserDataComponent } from './user-data/user-data.component';
 import { ToDoComponent } from './to-do/to-do.component';
+import { QuotesComponent } from './quotes/quotes.component';
 
 const myRoute:Routes =[
   {
@@ -42,6 +43,10 @@ const myRoute:Routes =[
   {
     path:"toDo",
     component:ToDoComponent
+  },
+  {
+    path:"quotes",
+    component:QuotesComponent
   }
 ]
 @NgModule({
@@ -54,7 +59,8 @@ const myRoute:Routes =[
     UserinfoComponent,
     ProductListComponent,
     UserDataComponent,
-    ToDoComponent
+    ToDoComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,
