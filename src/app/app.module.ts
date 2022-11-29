@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ViewPassengerDataComponent } from './view-passenger-data/view-passenger-data.component';
 import { UsPublicDataViewComponent } from './us-public-data-view/us-public-data-view.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PublicApiViewComponent } from './public-api-view/public-api-view.component';
 
 const myRoute:Routes =[
   {
@@ -17,6 +18,10 @@ const myRoute:Routes =[
   {
     path:"usPublic",
     component:UsPublicDataViewComponent
+  },
+  {
+    path:"publicView",
+    component:PublicApiViewComponent
   }
 ]
 @NgModule({
@@ -24,7 +29,8 @@ const myRoute:Routes =[
     AppComponent,
     ViewPassengerDataComponent,
     UsPublicDataViewComponent,
-    NavbarComponent
+    NavbarComponent,
+    PublicApiViewComponent
   ],
   imports: [
     BrowserModule,
