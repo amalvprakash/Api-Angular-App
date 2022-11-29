@@ -9,6 +9,7 @@ import { ViewPassengerDataComponent } from './view-passenger-data/view-passenger
 import { UsPublicDataViewComponent } from './us-public-data-view/us-public-data-view.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PublicApiViewComponent } from './public-api-view/public-api-view.component';
+import { UserinfoComponent } from './userinfo/userinfo.component';
 
 const myRoute:Routes =[
   {
@@ -22,6 +23,10 @@ const myRoute:Routes =[
   {
     path:"publicView",
     component:PublicApiViewComponent
+  },
+  {
+    path:"userInfo",
+    component:UserinfoComponent
   }
 ]
 @NgModule({
@@ -30,7 +35,8 @@ const myRoute:Routes =[
     ViewPassengerDataComponent,
     UsPublicDataViewComponent,
     NavbarComponent,
-    PublicApiViewComponent
+    PublicApiViewComponent,
+    UserinfoComponent
   ],
   imports: [
     BrowserModule,
