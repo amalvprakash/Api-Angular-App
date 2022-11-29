@@ -12,6 +12,7 @@ import { PublicApiViewComponent } from './public-api-view/public-api-view.compon
 import { UserinfoComponent } from './userinfo/userinfo.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { UserDataComponent } from './user-data/user-data.component';
+import { ToDoComponent } from './to-do/to-do.component';
 
 const myRoute:Routes =[
   {
@@ -37,6 +38,10 @@ const myRoute:Routes =[
   {
     path:"userData",
     component:UserDataComponent
+  },
+  {
+    path:"toDo",
+    component:ToDoComponent
   }
 ]
 @NgModule({
@@ -48,7 +53,8 @@ const myRoute:Routes =[
     PublicApiViewComponent,
     UserinfoComponent,
     ProductListComponent,
-    UserDataComponent
+    UserDataComponent,
+    ToDoComponent
   ],
   imports: [
     BrowserModule,
